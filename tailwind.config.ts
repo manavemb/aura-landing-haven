@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -64,15 +63,15 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				aura: {
-					100: '#F6F4FF',
-					200: '#E5DEFF',
-					300: '#D1C8FF',
-					400: '#A797F7',
-					500: '#8B5CF6',
-					600: '#7C4EE0',
-					700: '#6037D5',
-					800: '#4D29BC',
-					900: '#341B90'
+					100: '#F2FCE2',
+					200: '#E2F5C7',
+					300: '#CCEEA8',
+					400: '#A8DD75',
+					500: '#7BC62D',
+					600: '#69B423',
+					700: '#548F1C',
+					800: '#4A7D19',
+					900: '#386215'
 				}
 			},
 			borderRadius: {
@@ -99,14 +98,24 @@ export default {
 						transform: 'translateY(0)'
 					}
 				},
-				'fade-out': {
+				'fade-in-fast': {
 					'0%': {
-						opacity: '1',
-						transform: 'translateY(0)'
-					},
-					'100%': {
 						opacity: '0',
 						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-in-slow': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
 					}
 				},
 				'scale-in': {
